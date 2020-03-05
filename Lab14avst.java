@@ -22,7 +22,7 @@ public class Lab14avst extends Applet
 		dog.add(triangle);
 		dog.add(octagon);
 		dog.add(circle);
-		//for (int x = 0; x<dog.size(); x++){
+		for (int x = 0; x<dog.size(); x++){
 			//dog.get(x).drawShape();
 			//dog.get(x).displayName();
 			//dog.get(x).displayNumSides();

@@ -10,7 +10,10 @@ public class Shape1Square implements Shape
    {
      g.fillRect(50,50,100,100);
    }
-   public void displayName(){
-     g.
+   public void displayName(Graphics g){
+     g.drawString("This is a square.",50,125);
+   }
+   public void displayNumSides(Graphics g){
+     g.drawString("This has 4 sides.",50,155);
    }
 }
