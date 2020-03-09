@@ -6,6 +6,11 @@ import java.awt.*;
 
 public class Shape3Octagon implements Shape
 {
+  String shapeName;
+  int numSides;
+  public Shape3Octagon(){
+    shapeName = "Octagon"; numSides = 8;
+  }
    public void drawShape(Graphics g)
    {
      Polygon octagon = new Polygon();
@@ -14,9 +19,9 @@ public class Shape3Octagon implements Shape
      g.fillPolygon(octagon);
    }
    public void displayName(Graphics g){
-     g.drawString("This is an octagon.", 30,325);
+     g.drawString("This is an " + shapeName + ".", 30,325);
    }
    public void displayNumSides(Graphics g){
-     g.drawString("This has 8 sides.", 30, 450);
+     g.drawString("This has " + numSides + " sides.", 30, 450);
    }
 }

@@ -6,7 +6,11 @@ import java.awt.*;
 
 public class Shape2Triangle implements Shape
 {
-
+  String shapeName;
+  int numSides;
+  public Shape2Triangle(){
+    shapeName = "Triangle";numSides=3;
+  }
    public void drawShape(Graphics g)
    {
      Polygon triangle = new Polygon();
@@ -14,9 +18,9 @@ public class Shape2Triangle implements Shape
      g.fillPolygon(triangle);
    }
    public void displayName(Graphics g){
-     g.drawString("This is a triangle.",450,100);
+     g.drawString("This is a " + shapeName + ".",450,120);
    }
    public void displayNumSides(Graphics g){
-     g.drawString("This has 3 sides.",450,130);
+     g.drawString("This has " + numSides + " sides.",450,130);
    }
 }
